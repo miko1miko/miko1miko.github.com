@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | 桃花源</title>
+    <title>java_websocket | 桃花源</title>
     <meta name="author" content="miko" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -31,6 +31,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -144,124 +148,39 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
-    
-    <div id="timeline-wrap" ref="timeline">
+            <div class="article">
+    <div>
+        <h1>java_websocket</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/4/3
+        </span>
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/1</div>
-                <a href="/2024/04/01/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="test_hexo">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/1</div>
-                <a href="/2024/04/01/test-hexo/">
-                    <h3>test_hexo</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="redisstream">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/2</div>
-                <a href="/2024/04/02/redisstream/">
-                    <h3>redisstream</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="database_test">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/2</div>
-                <a href="/2024/04/02/database-test/">
-                    <h3>database_test</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="java_websocket">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/3</div>
-                <a href="/2024/04/03/java-websocket/">
-                    <h3>java_websocket</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="idea_debug">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/3</div>
-                <a href="/2024/04/03/idea-debug/">
-                    <h3>idea_debug</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="vscode_git">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/8</div>
-                <a href="/2024/04/08/vscode-git/">
-                    <h3>vscode_git</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="docker">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/5/29</div>
-                <a href="/2024/05/29/docker/">
-                    <h3>docker</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
         
     </div>
+    
+    <div class="content" v-pre>
+        <h1 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h1><h2 id="ServerEndpoint"><a href="#ServerEndpoint" class="headerlink" title="@ServerEndpoint"></a>@ServerEndpoint</h2><p>  client通过注解的值访问websocket server端</p>
+<h2 id="OnOpen"><a href="#OnOpen" class="headerlink" title="@OnOpen"></a>@OnOpen</h2><p>  接受新的请求</p>
+<p>  必须使用@PathParam</p>
+<h2 id="OnClose"><a href="#OnClose" class="headerlink" title="@OnClose"></a>@OnClose</h2><p>  关闭调用</p>
+<h2 id="OnMessage"><a href="#OnMessage" class="headerlink" title="@OnMessage"></a>@OnMessage</h2><p>  接收到客户端消息触发</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>postman</p>
+<p>File -&gt; New -&gt; WebSocket Request<br>ws:&#x2F;&#x2F;localhost:8080&#x2F;webSocket&#x2F;num</p>
+<p>学习网址：blog.csdn.net&#x2F;weixin_44402979&#x2F;article&#x2F;details&#x2F;129475495</p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
             <footer id="footer">
@@ -292,6 +211,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>
